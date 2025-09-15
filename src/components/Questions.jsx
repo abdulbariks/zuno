@@ -4,7 +4,7 @@ const Questions = () => {
   return (
     <div className="w-10/12 md:w-9/12 mx-auto my-10">
       <div className="flex flex-col items-center justify-center">
-        <button className="bg-gray-300 py-1 px-5 rounded-3xl">
+        <button className="bg-gray-300 dark:bg-gray-700 dark:text-white py-1 px-5 rounded-3xl">
           Questions?
         </button>
         <h2 className="text-4xl font-bold pt-5 pb-10">We’re here to help</h2>

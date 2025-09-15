@@ -22,12 +22,12 @@ const Payments = () => {
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
         </div>
-        <div className="row-span-2 overflow-hidden bg-gray-100 rounded-xl shadow-md">
+        <div className="row-span-2 overflow-hidden bg-gray-100 dark:bg-gray-700 rounded-xl shadow-md">
           <div className="w-10/12 mx-auto mt-16">
-            <button className="bg-gray-300 py-1 px-5 rounded-3xl">
+            <button className="bg-gray-300 dark:bg-gray-900 dark:text-white py-1 px-5 rounded-3xl">
               Ready to automate?
             </button>
-            <h2 className="text-4xl font-bold mt-5">
+            <h2 className="text-4xl dark:text-white font-bold mt-5">
               Stay on top of your recurring payments with ease
             </h2>
           </div>
