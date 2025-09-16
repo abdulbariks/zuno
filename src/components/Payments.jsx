@@ -13,50 +13,53 @@ const Payments = () => {
   const allImages = [...images, ...images];
 
   return (
-    <div className="w-11/12 md:w-10/12 mx-auto ">
-      <div className="grid grid-cols-2 grid-rows-3 gap-4 p-6 bg-white">
-        <div className="row-span-3">
-          <img
-            src="https://i.ibb.co/QFW5QDtv/67fd3b3b64ef722b8bd2b5c4-bg-cloud-77.jpg"
-            alt="Main visual"
-            className="w-full h-full object-cover rounded-xl shadow-md"
-          />
-        </div>
-        <div className="row-span-2 overflow-hidden bg-gray-100 dark:bg-gray-700 rounded-xl shadow-md">
-          <div className="w-10/12 mx-auto mt-16">
-            <button className="bg-gray-300 dark:bg-gray-900 dark:text-white py-1 px-5 rounded-3xl">
-              Ready to automate?
-            </button>
-            <h2 className="text-4xl dark:text-white font-bold mt-5">
-              Stay on top of your recurring payments with ease
-            </h2>
+    <div className="w-full bg-white">
+      <div className="w-11/12 md:w-10/12 mx-auto ">
+        <div className="grid grid-cols-2 grid-rows-3 gap-4 p-6 ">
+          <div className="row-span-3">
+            <img
+              src="https://i.ibb.co/QFW5QDtv/67fd3b3b64ef722b8bd2b5c4-bg-cloud-77.jpg"
+              alt="Main visual"
+              className="w-full h-full object-cover rounded-xl shadow-md"
+            />
+          </div>
+          <div className="row-span-2 overflow-hidden bg-gray-100 dark:bg-gray-700 rounded-xl shadow-md">
+            <div className="w-10/12 mx-auto mt-16">
+              <button className="bg-gray-300 dark:bg-gray-900 dark:text-white py-1 px-5 rounded-3xl">
+                Ready to automate?
+              </button>
+              <h2 className="text-4xl dark:text-white font-bold mt-5">
+                Stay on top of your recurring payments with ease
+              </h2>
+            </div>
+          </div>
+          <div className="row-span-1 overflow-hidden">
+            <motion.div
+              className="flex gap-6"
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{
+                ease: "linear",
+                duration: 10,
+                repeat: Infinity,
+              }}
+            >
+              {allImages.map((img, i) => (
+                <div
+                  key={i}
+                  className="w-[200px] h-[200px] flex-shrink-0 rounded-xl overflow-hidden shadow"
+                >
+                  <img
+                    src={img}
+                    alt={`image-${i}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
-        <div className="row-span-1 overflow-hidden">
-          <motion.div
-            className="flex gap-6"
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{
-              ease: "linear",
-              duration: 10,
-              repeat: Infinity,
-            }}
-          >
-            {allImages.map((img, i) => (
-              <div
-                key={i}
-                className="w-[200px] h-[200px] flex-shrink-0 rounded-xl overflow-hidden shadow"
-              >
-                <img
-                  src={img}
-                  alt={`image-${i}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </motion.div>
-        </div>
       </div>
+      s
     </div>
   );
 };

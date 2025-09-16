@@ -4,7 +4,7 @@ const RequestDemo = () => {
   return (
     <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto mt-10 py-10">
       <div className="flex flex-col items-center justify-center mt-10">
-        <button className="bg-gray-300 py-1 px-5 rounded-3xl">
+        <button className="bg-gray-300 dark:bg-gray-700 dark:text-white py-1 px-5 rounded-3xl">
           Get Started with Zuno
         </button>
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center py-5">
@@ -55,7 +55,7 @@ const RequestDemo = () => {
             </div>
           </div>
         </div>
-        <form className="flex-1 bg-white rounded-xl p-8 shadow-lg space-y-5">
+        <form className="flex-1 bg-white dark:bg-gray-700 dark:text-white rounded-xl p-8 shadow-lg space-y-5">
           <div className="flex gap-4">
             <div className="flex-1">
               <label
@@ -190,7 +190,7 @@ const RequestDemo = () => {
 
           <button
             type="submit"
-            className="w-full bg-green-300 rounded-md py-2 font-semibold hover:bg-green-400 transition"
+            className="w-full bg-green-300  dark:text-black rounded-md py-2 font-semibold hover:bg-green-400 transition"
           >
             Let's talk
           </button>

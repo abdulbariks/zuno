@@ -31,7 +31,7 @@ const PersonalGrowth = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center min-h-screen py-10 transition-all duration-500">
+    <div className="w-full flex items-center justify-center py-32 transition-all duration-500">
       <AnimatePresence>
         {!scrolled ? (
           <motion.div
@@ -54,7 +54,7 @@ const PersonalGrowth = () => {
         ) : (
           <motion.div
             key="circle"
-            className="relative w-[500px] h-[500px]"
+            className="relative hidden md:block w-[500px] h-[500px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const PersonalGrowth = () => {
               );
             })}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-              <button className="bg-gray-300 py-1 px-5 rounded-3xl my-10">
+              <button className="bg-gray-300 dark:bg-gray-700 dark:text-white py-1 px-5 rounded-3xl my-10">
                 Personal Growth
               </button>
               <h1 className="text-3xl font-bold w-8/12 mx-auto ">

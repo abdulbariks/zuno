@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import logo from "../assets/logo.svg";
 const Footer = () => {
   return (
-    <section className="bg-[#173431] h-[100vh] fixed bottom-0">
+    <section className="bg-[#173431] w-full h-[100vh] fixed bottom-0">
       <div className="w-11/12 mx-auto">
         <img className="w-10/12 mx-auto" src={logo} alt="" />
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 my-10">

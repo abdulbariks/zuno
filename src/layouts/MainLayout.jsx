@@ -12,7 +12,7 @@ const MainLayout = () => {
       </div>
 
       {/* Page content */}
-      <div className="flex-1 bg-base-100 dark:bg-gray-800 mb-[80vh] rounded-b-4xl relative z-30">
+      <div className="flex-1 bg-base-100 w-full dark:bg-gray-800 mb-[80vh] rounded-b-4xl relative z-30">
         <Outlet />
       </div>
 

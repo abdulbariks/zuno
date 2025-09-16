@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-2 left-1/2 -translate-x-1/2 w-11/12 md:w-8/12 backdrop-blur-sm inset-shadow-2xs shadow px-6 py-3 rounded-md flex items-center justify-between bg-white/70 dark:bg-gray-900/70">
+    <nav className="fixed top-2 left-1/2 -translate-x-1/2 w-11/12 md:w-8/12 mx-auto backdrop-blur-sm inset-shadow-2xs shadow px-6 py-3 rounded-md flex items-center justify-between bg-white/70 dark:bg-gray-900/70">
       <div className="text-2xl font-bold text-black dark:text-white">zuno</div>
       <ul className="flex items-center space-x-6 text-gray-700 dark:text-gray-300 font-medium">
         <li>
